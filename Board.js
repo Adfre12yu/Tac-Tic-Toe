@@ -13,7 +13,7 @@ export default class Board {
         this.b[row][column] = mark;
         let slot = this.boardHTML[row][column];
         mark == "x"
-            ? (slot.innerHTML = `<i style="font-size: 175px" class="fa-solid fa-xmark"></i>`)
+            ? (slot.innerHTML = `<i style="font-size: var(--x-font)" class="fa-solid fa-xmark"></i>`)
             : (slot.innerHTML = `<i class="fa-solid fa-o">`);
     }
 

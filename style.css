@@ -1,3 +1,8 @@
+:root {
+    --o-font: clamp(1.875rem, -1.546rem + 17.11vmin, 10rem);
+    --x-font: clamp(2.813rem, -0.609rem + 17.11vmin, 10.938rem);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,11 +18,11 @@ body {
 
 #board {
     background-color: #77c4bb;
-    width: 700px;
-    height: 700px;
+    width: 75vmin;
+    height: 75vmin;
     display: grid;
     padding: 20px;
-    grid-template: repeat(3, 200px) / repeat(3, 200px);
+    grid-template: repeat(3, 29%) / repeat(3, 29%);
     justify-content: space-evenly;
     align-content: space-evenly;
     border-radius: 25px;
@@ -30,8 +35,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
     border-radius: 20px;
     transition: background-color 200ms;
@@ -67,7 +72,7 @@ button:hover {
 }
 
 i {
-    font-size: 150px;
+    font-size: var(--o-font);
 }
 
 .show {
@@ -84,4 +89,5 @@ i {
 }
 .disabled:hover {
     background-color: #d1ebe7;
+    transform: scale(1);
 }
