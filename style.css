@@ -1,6 +1,7 @@
 :root {
     --o-font: clamp(1.875rem, -1.546rem + 17.11vmin, 10rem);
     --x-font: clamp(2.813rem, -0.609rem + 17.11vmin, 10.938rem);
+    --btn-font: clamp(1rem, 0.368rem + 3.16vmin, 2.5rem);
 }
 
 * {
@@ -52,7 +53,7 @@ button {
     position: absolute;
     pointer-events: none;
     opacity: 0;
-    font-size: 2.5rem;
+    font-size: var(--btn-font);
     border: none;
     background-color: #559790;
     border-radius: 12px;
